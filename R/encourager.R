@@ -6,7 +6,7 @@
 #' A selection of helpful hints and tips from the Rstats community about their own
 #' pitfalls and difficulties.
 #'
-#' Success isn't easy, we promise we've all been there.
+#' Learning R isn't easy, we promise we've all been there.
 #'
 #' @export
 #' @import stats
