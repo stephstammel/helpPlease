@@ -13,6 +13,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # About `helpPlease`
 
+** Still in proof of concept **
+
 Starting out in R can be quite overwhelming. There are lots of resources and people around who want to help, but navigating those can be hard and some of the R error messages and explainers within R itself can seem like something of a foreign language.
 
 helpPlease is there to bridge the gap. The gap closes by itself over time, but let's build a bridge and make life easier.
