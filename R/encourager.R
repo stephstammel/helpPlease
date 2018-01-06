@@ -4,7 +4,7 @@
 #' A randomly generated assortment of encouragement from the Rstats community
 #' that demonstrates that failure isn't just common when coding - it's essential.
 #' A selection of helpful hints and tips from the Rstats community about their own
-#' pitfalls and difficulties - and how they solved them.
+#' pitfalls and difficulties.
 #'
 #' Success isn't easy, we promise we've all been there.
 #'
