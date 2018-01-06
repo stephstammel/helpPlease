@@ -1,0 +1,19 @@
+Package: helpPlease
+Type: Package
+Title: Get Help When Starting Out in R
+Version: 0.1.0
+Author: Steph de Silva
+Maintainer: Steph de Silva <steph@rex-analytics.com>
+Description: Starting out with R can be overwhelming. Error messages in particular
+    can appear to be in some kind of arcane language no regular human would understand.
+    We can assure you that after a very short period, it all becomes clear - but in the
+    meantime, it's pretty confusing. helpPlease provides a number of function that allow you to access plain language explanations
+    and tips that have worked for other R users.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: false
+Suggests: knitr, rmarkdown, tidyverse, tidytext
+Imports: stats, utils
+Depends:  R (>= 2.10)
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
