@@ -34,12 +34,12 @@ require(devtools) # You only need this line one time
 install_github("stephdesilva/helpPlease") # You only need this line one time
 ```
 
+Use the command `library(helpPlease)` every time you'd like to use the package, but the other two lines you only need to run once to get the package onto your local computer.
+
 ```{r, eval = FALSE, echo = TRUE}
 library(helpPlease) # You will need this line every time you want to use the 
                     # package in a new session of R.
 ```
-
-Use the command `library(helpPlease)` every time you'd like to use the package, but the other two lines you only need to run once to get the package onto your local computer.
 
 
 # What's in `helpPlease` right now?
@@ -51,32 +51,36 @@ There are currently four main functions in this tester phase of the helpPlease. 
 This function takes a key phrase from the error you don't understand and looks for a plain language explanation from our database. It may also be able to provide you with helpful links or tips.
 
 For example, say you are presented with the error: `Error in library(abcd) : there is no package called ‘abcd’`
+
     ```{r, eval = FALSE, echo = TRUE}
     helpError("there is no package called")
     ```
 
-##`defineMe()`
+## `defineMe()`
 
 Did you ever wonder what _atomic_ refers to in R? What's a _closure_ and why is it not _subsettable_? This function takes the word you're unsure about and searches for a plain language explanation from our database. There may be links to further reading!
 
 For example, say you are presented with the error `Error in encourager[4, 5] : object of type 'closure' is not subsettable` and you'd like to know what on earth a closure is.
+
     ```{r, eval = FALSE, echo = TRUE}
     defineMe("closure")
     ```
 
-##`encourager()` 
+## `encourager()` 
 
 We all need to know we're not the only person who ever spent four hours looking for a missing comma. Inspired by the `praise` package, which teaches new programmers to write packages, the `encourager()` function will give you the insights and favourite resources of your R stats community straight to the console.
 
 For example, you're ready to throw your laptop out the window. Please don't, you'll regret it when you're trying to type great tweets on your phone tonight. Instead, try: 
+
     ```{r, eval = FALSE, echo = TRUE}
         encourager()
     ```
 
-##`troubleShooter()`
+## `troubleShooter()`
 
 New to programming and finding all the stuff you _don't know_ really matters? `troubleShooter()` will put tips and tricks from the R stats community right into your console. You don't know what you don't know - until someone takes the time to tell you.
     + For example, you've spent the last hour looking for a missing comma (it happens), try: 
+    
     ```{r, eval = FALSE, echo = TRUE}
         troubleShooter()
     ```
