@@ -8,7 +8,7 @@ Description: Starting out with R can be overwhelming. Error messages in particul
     can appear to be in some kind of arcane language no regular human would understand.
     We can assure you that after a very short period, it all becomes clear - but in the
     meantime, it's pretty confusing. helpPlease provides a number of function that allow you to access plain language explanations
-    and tips that have worked for other R users. ** Proof of concept stage.**
+    and tips that have worked for other R users. * Proof of concept stage. *
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: false
