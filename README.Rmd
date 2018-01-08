@@ -52,7 +52,7 @@ This function takes a key phrase from the error you don't understand and looks f
 
 For example, say you are presented with the error: `Error in library(abcd) : there is no package called ‘abcd’`
 
-    ```{r, eval = FALSE, echo = TRUE}
+    ```
     helpError("there is no package called")
     ```
 
@@ -62,7 +62,7 @@ Did you ever wonder what _atomic_ refers to in R? What's a _closure_ and why is 
 
 For example, say you are presented with the error `Error in encourager[4, 5] : object of type 'closure' is not subsettable` and you'd like to know what on earth a closure is.
 
-    ```{r, eval = FALSE, echo = TRUE}
+    ```
     defineMe("closure")
     ```
 
@@ -72,7 +72,7 @@ We all need to know we're not the only person who ever spent four hours looking 
 
 For example, you're ready to throw your laptop out the window. Please don't, you'll regret it when you're trying to type great tweets on your phone tonight. Instead, try: 
 
-    ```{r, eval = FALSE, echo = TRUE}
+    ```
         encourager()
     ```
 
@@ -81,7 +81,7 @@ For example, you're ready to throw your laptop out the window. Please don't, you
 New to programming and finding all the stuff you _don't know_ really matters? `troubleShooter()` will put tips and tricks from the R stats community right into your console. You don't know what you don't know - until someone takes the time to tell you.
     + For example, you've spent the last hour looking for a missing comma (it happens), try: 
     
-    ```{r, eval = FALSE, echo = TRUE}
+    ```
         troubleShooter()
     ```
   
