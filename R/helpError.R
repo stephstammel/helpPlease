@@ -30,7 +30,7 @@ helpError <- function(item){
   indices <- {}           ## TODO build a function and use map to get this more efficient
                           ## Alert: proof of concept quick-coding!
   for (i in 1:nrow(db)){
-     if (length(grep(item, as.character(db[i,1]), ignore.case = TRUE)) == 1){
+     if (length(grep(item, as.character(db[i,2]), ignore.case = TRUE)) == 1){
        indices <- append(indices, i)
      }
   }
@@ -39,7 +39,7 @@ helpError <- function(item){
     indices <- {}       ## TODO build a function and use map to get this more efficient
                         ## Alert: proof of concept quick-coding!
     for (i in 1:nrow(db)){
-      if (length(grep(item, as.character(db[i,2]), ignore.case = TRUE)) == 1){
+      if (length(grep(item, as.character(db[i,3]), ignore.case = TRUE)) == 1){
         indices <- append(indices, i)
       }
     }
@@ -71,13 +71,26 @@ And here: https://speakerdeck.com/jennybc/reprex-help-me-help-you
     }
   }
   if (length(indices) > 0){
-    helpText <- db[indices,3] # get the help text for this item
+    helpText <- db[indices,4] # get the help text for this item
     helpText <- unique(helpText) # remove duplicates
-    helpText <- unlist(helpText)
+   # helpText <- unlist(helpText)
 
   }
   cat("Searched for information about:" ,item)
-  cat ("\n")
-  cat(as.character(helpText))
+  cat ("\n\n")
+  cat("There were ", length(indices), " entries that matched the criteria.\n\n")
+  if (length(indices) > 1){
+    cat("We're not very sophisticated right now, sorry about that. \n\n")
+    cat("So you're going to get all the entries that match. \n\n")
+    cat("Hopefully something in there is helpful.")
+  }
+
+
+  cat ("\n\n")
+
+  for (i in 1:length(helpText)){
+    cat(as.character(helpText[i]))
+    cat ("\n\n")
+  }
 
 }

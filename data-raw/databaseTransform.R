@@ -1,18 +1,18 @@
 ## save the file as RDS
 
 require(openxlsx)
-defineDB <- read.xlsx("database.xlsx", sheet = "defineMe",
+defineDB <- read.xlsx("data-raw/database.xlsx", sheet = "defineMe",
                 colNames = TRUE)
-helpDB <- read.xlsx("database.xlsx", sheet = "helpError",
+helpDB <- read.xlsx("data-raw/database.xlsx", sheet = "helpError",
                     colNames = TRUE)
-encourageDB <- read.xlsx("database.xlsx", sheet = "encouragement",
+encourageDB <- read.xlsx("data-raw/database.xlsx", sheet = "encouragement",
                         colNames = TRUE)
-troubleShootDB <- read.xlsx("database.xlsx", sheet = "troubleshooting",
+troubleShootDB <- read.xlsx("data-raw/database.xlsx", sheet = "troubleshooting",
                             colNames = TRUE)
 
 
-devtools::use_data(defineDB)
-devtools::use_data(helpDB)
-devtools::use_data(encourageDB)
-devtools::use_data(troubleShootDB)
+devtools::use_data(defineDB, overwrite = TRUE)
+devtools::use_data(helpDB, overwrite = TRUE)
+devtools::use_data(encourageDB, overwrite = TRUE)
+devtools::use_data(troubleShootDB, overwrite = TRUE)
 
